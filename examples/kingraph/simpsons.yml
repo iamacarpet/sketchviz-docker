@@ -1,0 +1,54 @@
+families:
+  - parents: [Homer, Marge]
+    children: [Bart, Lisa, Maggie]
+  - parents: [Abe, Mona]
+    children: [Homer]
+  - parents: [Jacqueline, Clancy]
+    children: [Marge, Patty, Selma]
+
+people:
+  Bart:
+    name: Bart
+    fullname: Bart Simpson
+    gender: m
+  Lisa:
+    name: Lisa
+    fullname: Lisa Simpson
+    gender: f
+  Maggie:
+    name: Maggie
+    fullname: Maggie Simpson
+    gender: f
+  Marge:
+    name: Marge
+    fullname: Marjorie Jacqueline Simpson
+    gender: f
+  Homer:
+    name: Homer
+    fullname: Homer Simpson
+    gender: m
+  Abe:
+    name: Abe
+    fullname: Abe Simpson
+    gender: m
+  Mona:
+    name: Mona
+    fullname: Mona Simpson
+    gender: f
+  Patty:
+    name: Patty
+    fullname: Patty Bouvier
+    gender: f
+  Selma:
+    name: Selma
+    fullname: Selma Bouvier
+    gender: f
+  Jacqueline:
+    name: Jacqueline
+    fullname: Jacqueline Bouvier
+    gender: f
+  Clancy:
+    name: Clancy
+    fullname: Clancy Bouvier
+    gender: m
+

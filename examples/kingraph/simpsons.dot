@@ -1,0 +1,188 @@
+digraph G {
+  edge [
+    dir="none"
+    color="#cccccc"
+  ]
+  
+  node [
+    shape="box"
+    style="filled"
+    fontname="Sedgwick Ave"
+    fontsize=20
+    width=2.5
+    fillcolor="white"
+    color="#cccccc"
+  ]
+  
+  rankdir="LR"
+  ranksep=0.4
+  splines="ortho"
+  
+  subgraph cluster_family_0 {
+    label=""
+    style="invis"
+    margin=0
+    
+    # Family [Homer, Marge] -> [Bart, Lisa, Maggie]
+    # -------------------------------------------------------------------------
+    
+    union_0 [
+      fillcolor="#1abc9c"
+      shape="circle"
+      style="filled"
+      penwidth=1
+      color="white"
+      label=""
+      height=0.1
+      width=0.1
+    ]
+    
+    {Homer, Marge} -> union_0 [
+      color="#1abc9c"
+      weight=2
+    ]
+    union_0 -> siblings_0 [
+      color="#1abc9c"
+      weight=3
+    ]
+    siblings_0 [
+      fillcolor="#1abc9c"
+      shape="box"
+      style="filled"
+      label=""
+      height=0.005
+      penwidth=0
+      width=0.1
+    ]
+    siblings_0 -> {Bart, Lisa, Maggie} [
+      color="#1abc9c"
+      dir="forward"
+      arrowhead="tee"
+      arrowsize=2
+      weight=2
+    ]
+  }
+  
+  subgraph cluster_family_1 {
+    label=""
+    style="invis"
+    margin=0
+    
+    # Family [Abe, Mona] -> [Homer]
+    # -------------------------------------------------------------------------
+    
+    union_1 [
+      fillcolor="#2ecc71"
+      shape="circle"
+      style="filled"
+      penwidth=1
+      color="white"
+      label=""
+      height=0.1
+      width=0.1
+    ]
+    
+    {Abe, Mona} -> union_1 [
+      color="#2ecc71"
+      weight=2
+    ]
+    union_1 -> siblings_1 [
+      color="#2ecc71"
+      weight=3
+    ]
+    siblings_1 [
+      fillcolor="#2ecc71"
+      shape="box"
+      style="filled"
+      label=""
+      height=0.005
+      penwidth=0
+      width=0.1
+    ]
+    siblings_1 -> {Homer} [
+      color="#2ecc71"
+      dir="forward"
+      arrowhead="tee"
+      arrowsize=2
+      weight=2
+    ]
+  }
+  
+  subgraph cluster_family_2 {
+    label=""
+    style="invis"
+    margin=0
+    
+    # Family [Jacqueline, Clancy] -> [Marge, Patty, Selma]
+    # -------------------------------------------------------------------------
+    
+    union_2 [
+      fillcolor="#3498db"
+      shape="circle"
+      style="filled"
+      penwidth=1
+      color="white"
+      label=""
+      height=0.1
+      width=0.1
+    ]
+    
+    {Jacqueline, Clancy} -> union_2 [
+      color="#3498db"
+      weight=2
+    ]
+    union_2 -> siblings_2 [
+      color="#3498db"
+      weight=3
+    ]
+    siblings_2 [
+      fillcolor="#3498db"
+      shape="box"
+      style="filled"
+      label=""
+      height=0.005
+      penwidth=0
+      width=0.1
+    ]
+    siblings_2 -> {Marge, Patty, Selma} [
+      color="#3498db"
+      dir="forward"
+      arrowhead="tee"
+      arrowsize=2
+      weight=2
+    ]
+  }
+  "Bart" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Bart</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Bart Simpson</font></td></tr></table>>
+  ]
+  "Lisa" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Lisa</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Lisa Simpson</font></td></tr></table>>
+  ]
+  "Maggie" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Maggie</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Maggie Simpson</font></td></tr></table>>
+  ]
+  "Marge" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Marge</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Marjorie Jacqueline Simpson</font></td></tr></table>>
+  ]
+  "Homer" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Homer</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Homer Simpson</font></td></tr></table>>
+  ]
+  "Abe" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Abe</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Abe Simpson</font></td></tr></table>>
+  ]
+  "Mona" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Mona</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Mona Simpson</font></td></tr></table>>
+  ]
+  "Patty" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Patty</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Patty Bouvier</font></td></tr></table>>
+  ]
+  "Selma" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Selma</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Selma Bouvier</font></td></tr></table>>
+  ]
+  "Jacqueline" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Jacqueline</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Jacqueline Bouvier</font></td></tr></table>>
+  ]
+  "Clancy" [
+    label=<<table align="center" border="0" cellpadding="0" cellspacing="2" width="4"><tr><td align="center">Clancy</td></tr><tr><td align="center"><font point-size="10" color="#aaaaaa">Clancy Bouvier</font></td></tr></table>>
+  ]
+}
